@@ -9,20 +9,6 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="./css/main.css">
   
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      .fade-in {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-      }
-      .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    </style>
   </head>
   <body class="bg-sky-50 text-gray-900 font-sans">
     <section
@@ -43,270 +29,184 @@
       <h1 class="text-5xl font-bold mb-4">Terry Kim</h1>
 
       <p class="text-lg max-w-xl">Aspiring Programmer | Lifelong Learner</p>
-      <a
-        href="#about"
-        class="mt-6 px-6 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-500 transition"
-        >Learn More</a
-      >
+    <a href="#about" class="mt-6 px-6 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-500 transition">Learn
+      More</a>
     </header>
 
-    <section id="about" class="py-20 px-6 max-w-3xl mx-auto fade-in">
-      <h2 class="text-3xl font-bold mb-7">About Me</h2>
-
-      <p>
-        Seneca Polytechnic student with a passion for programming and
-        technology. I am currently pursuing an advanced diploma in Computer
-        Programming and Analysis. I have a previous background in Bachelor of
-        Science in Psychology from University of New Brunswick, Fredericton.
+<section id="about" class="about-section fade-in py-20 px-6 max-w-5xl mx-auto">
+  <div class="about-content flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-6">
+    <img src="./11.jpg" alt="Your Photo" class="about-img w-full md:w-72 h-auto object-cover shadow-md rounded-md" />
+    <div class="about-text-group text-center md:text-left">
+      <h2 class="text-3xl font-bold mb-6">About Me</h2>
+      <p class="about-text">
+        Seneca Polytechnic student with a passion for programming and technology. I am currently pursuing an advanced
+        diploma in Computer Programming and Analysis. I have a previous background in Bachelor of Science in
+        Psychology from University of New Brunswick, Fredericton.
       </p>
-      <bar></bar>
-      <img
-        src="./11.jpg"
-        class="w-58 h-68 mt-12 mb-1 rounded-full mx-auto shadow-lg hover:shadow-2xl"
-        alt="Your Photo"
-      />
-    </section>
+    </div>
+  </div>
+</section>
 
-    <h3>
-      <section id="education" class="py-20 px-6 max-w-3xl mt-3 mx-auto">
-        <h3 class="text-3xl font-bold mb-7">Education</h3>
-
-        <div class="flex items-center space-x-2 mb-1">
-          <i data-lucide="scroll-text" class="w-6 h-6"></i>
-          <div>
-            <h3 class="text-xl font-semibold">
-              Advanced Diploma in Computer Programming and Analysis
-            </h3>
-            <p class="text-gray-700">Seneca Polytechnic — Present</p>
-            <p class="text-gray-600 text-sm">
-              Relevant courses: Data Structures, Web Development,
-              Objective-oriented programming
-            </p>
+  <section id="education" class="bg-gray-200 py-20 fade-in">
+    <div class="px-6 max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center">Education</h2>
+      <div class="education-grid grid gap-6 md:grid-cols-2">
+        <div class="education-card p-4 border shadow-md rounded-md bg-[rgb(245,245,245)]">
+          <div class="icon-title flex items-center space-x-2">
+            <i data-lucide="scroll-text" class="icon text-emerald-800"></i>
+            <h3 class="text-xl font-semibold">Advanced Diploma in Computer Programming and Analysis</h3>
           </div>
-        </div>
-
-        <div>
-          <div class="flex items-center space-x-2 mt-5">
-            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
-            <div>
-              <h3 class="text-xl font-semibold">
-                Bachelor of Science in Psychology
-              </h3>
-              <p class="text-gray-700">University of New Brunswick — 2013</p>
-              <p class="text-gray-600 text-sm">
-                Relevant courses: Maybe some statistic/research classes
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="flex items-center space-x-2 mt-5">
-            <i data-lucide="book-open-check" class="w-6 h-6"></i>
-            <h3 class="text-xl font-semibold mb-3">Certificates</h3>
-          </div>
-
-          <div class="ml-7 flex flex-wrap gap-2">
-            <span
-              class="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm"
-              >Google IT Automation With Python</span
-            >
-            <span
-              class="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm"
-              >Google Data Analytics</span
-            >
-            <span
-              class="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm"
-              >Google Cybersecurity</span
-            >
-          </div>
-        </div>
-
-        <style>
-          .custom-list {
-            list-style-type: none;
-            padding-left: 0;
-          }
-
-          .custom-list li {
-            position: relative;
-            padding-left: 20px;
-          }
-
-          .custom-list li::before {
-            content: "-";
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: #4c93af;
-          }
-        </style>
-
-        <!-- </div> -->
-      </section>
-    </h3>
-
-    <section id="projects" class="py-20 px-6 max-w-3xl mx-auto fade-in">
-      <h2 class="text-3xl font-bold mb-4">Projects</h2>
-      <h3 class="text-mid font-semibold mb-4">Personal projects</h3>
-      <h4 class="text-sm mb-4">
-        Here are some of the projects I have worked on. Click on the project
-        name to view the code on github.
-      </h4>
-      <div class="grid gap-6 md:grid-cols-2">
-        <a href="https://github.com/terrykim109/TorontoHousingShelters">
-          <div
-            class="p-4 border rounded shadow hover:shadow-lg transition bg-emerald-50"
-            url="https://github.com/terrykim109/TorontoHousingShelters"
-          >
-            <h3 class="text-xl font-semibold">Homelesss Shelter App</h3>
-
-            <img
-              src="home.jpg"
-              class="w-58 h-68 mt-4 mb-1 rounded-full mx-auto shadow-lg hover:shadow-2xl"
-              alt="Your Photo"
-            />
-            <p class="text-sm mt-3">
-              Predicts the availability of homeless shelter in Toronto area
-              based on previous api from Toronto opendata website and suggests
-              the nearest homeless shelter.
-            </p>
-
-            <span
-              class="px-3 py-1 bg-blue-100 text-emerald-800 rounded-full text-sm inline-block mt-2"
-              >Javascript</span
-            >
-          </div>
-        </a>
-
-        <div
-          class="p-4 border rounded shadow hover:shadow-lg transition bg-emerald-50"
-        >
-          <h3 class="text-xl font-semibold">Cybersecurity SQL project</h3>
-          <img
-            src="cyber.jpg"
-            class="w-58 h-68 mt-4 mb-1 rounded-full mx-auto shadow-lg hover:shadow-2xl"
-            alt="Your Photo"
-          />
-          <p class="text-sm mt-3">Cybersecurity data managed with SQL.</p>
-
-          <span
-            class="px-3 py-1 bg-blue-100 text-emerald-800 rounded-full text-sm inline-block mt-2"
-            >SQL</span
-          >
-        </div>
-        <div
-          class="p-4 border rounded shadow hover:shadow-lg transition bg-emerald-50 "
-        >
-          <h3 class="text-xl font-semibold ">Narrative Psychology App</h3>
-
-          <img
-            src="./1.webp"
-            class="w-58 h-68 mt-4 mb-1 rounded-full mx-auto shadow-lg hover:shadow-2xl"
-            alt="Your Photo"
-          />
-          <p class="text-sm mt-3">Mimics the narrative therapy</p>
-          <span
-            class="px-3 py-1 bg-blue-100 text-emerald-800 rounded-full text-sm inline-block mt-2"
-            >Python</span
-          >
-        </div>
-        <div
-          class="p-4 border rounded shadow hover:shadow-lg transition bg-emerald-50"
-        >
-          <h3 class="text-xl font-semibold">Pokemon Collection App</h3>
-          <img
-            src="4.webp"
-            class="w-58 h-68 mt-5 mb-1 rounded-full mx-auto shadow-lg hover:shadow-2xl"
-            alt="Your Photo"
-          />
-          <p class="text-sm mt-3 ">Pokemon Cards collection app for personal use.</p>
-          <span
-            class="px-3 py-1 bg-blue-100 text-emerald-800 rounded-full text-sm inline-block mt-2"
-            >C++</span
-          >
-        </div>
-        <div
-          class="p-4 border rounded shadow hover:shadow-lg transition bg-emerald-50"
-        >
-          <h3 class="text-xl font-semibold">Breakout game</h3>
-          <img
-            src="123.png"
-            class="w-58 h-68 mt-4 mb-1 rounded-full mx-auto shadow-lg hover:shadow-2xl"
-            alt="Your Photo"
-          />
-
-          <p class="text-sm mt-3">Popular arcade game from 70's, breakout.</p>
-          <span
-            class="inline-block px-3 py-1 bg-blue-100 text-emerald-800 rounded-full text-sm mt-1"
-            >Java</span
-          >
-        </div>
-      </div>
-
-      <h3 class="text-mid font-semibold mt-6 mb-4">School projects</h3>
-      <h4 class="text-sm mb-4">
-        Here are descriptions of some of the projects I have worked on at Seneca
-        Polytechnic. Source code available on request offline due to school
-        policy.
-      </h4>
-      <div class="grid gap-6 md:grid-cols-2">
-        <div
-          class="p-4 border rounded shadow hover:shadow-lg transition bg-emerald-50"
-        >
-          <h3 class="text-xl font-semibold">Veterinarian Clinic System</h3>
-          <!-- <img src="dog.jpg" class="w-58 h-68 mt-3 mb-1 rounded-full mx-auto shadow-lg hover:shadow-2xl" alt="Your Photo" /> -->
-          <p>
-            Allows staff to manage patient(pet) records and schedule
-            appointments through a menu-driven interface. Features include
-            adding and updating patient information, booking and managing
-            appointments, and importing data from external text files. Built
-            with a modular design, the system demonstrates core C programming
-            concepts such as structures, functions, file I/O, and user input
-            handling
+          <p class="text-gray-700">Seneca Polytechnic — Present</p>
+          <p class="text-gray-600 text-sm">
+            Relevant courses: Data Structures, Web Development, Object-Oriented Programming
           </p>
+        </div>
 
-          <span
-            class="inline-block px-3 py-1 bg-blue-100 text-emerald-800 rounded-full text-sm mt-4"
-            >C</span
-          >
+        <div class="education-card p-4 border shadow-md rounded-md bg-[rgb(245,245,245)]">
+          <div class="icon-title flex items-center space-x-2">
+            <i data-lucide="graduation-cap" class="icon text-emerald-800"></i>
+            <h3 class="text-xl font-semibold">Bachelor of Science in Psychology</h3>
+          </div>
+          <p class="text-gray-700">University of New Brunswick — 2013</p>
+          <p class="text-gray-600 text-sm">
+            Relevant courses: Statistics, Research Methods, Cognitive Psychology
+          </p>
+        </div>
+
+        <div class="education-card p-4 border shadow-md rounded-md bg-[rgb(245,245,245)]">
+          <div class="icon-title flex items-center space-x-2">
+            <i data-lucide="book-open-check" class="icon text-emerald-800"></i>
+            <h3 class="text-xl font-semibold">Certificates</h3>
+          </div>
+          <div class="ml-1 flex flex-wrap gap-2 mt-2">
+            <span class="tag  rounded-full px-3 py-1 text-sm">Google IT Automation with Python</span>
+            <span class="tag  rounded-full px-3 py-1 text-sm">Google Data Analytics</span>
+            <span class="tag  rounded-full px-3 py-1 text-sm">Google Cybersecurity</span>
+               <span class="tag  rounded-full px-3 py-1 text-sm">Google IT Support</span>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="py-20 px-6 max-w-3xl mx-auto fade-in">
-      <h2 class="text-3xl font-bold mb-4">Contact</h2>
-      <p>
-        Want to connect? Send me an email at
-        <a href="mailto:terrykim109@gmail.com" class="text-blue-500 underline"
-          >terrykim109@gmail.com</a
-        >.
-      </p>
-    </section>
+  <section id="projects" class="py-20 px-6 max-w-5xl mx-auto fade-in">
+    <h2 class="text-3xl font-bold mb-10 text-center">Side Projects</h2>
 
-    <footer class="py-6 text-center text-sm text-gray-500">
-      © 2025 Terry Kim. All rights reserved.
-    </footer>
 
-    <script>
-      const faders = document.querySelectorAll(".fade-in");
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-            }
-          });
-        },
-        {
-          threshold: 0.1,
-        }
-      );
+    <div class="project-grid grid gap-6 md:grid-cols-2">
+      <a href="https://github.com/terrykim109/TorontoHousingShelters"
+        class="project-card p-4 border shadow-md rounded-md bg-[rgb(245,245,245)]">
+        <h3 class="project-title text-xl font-semibold mb-4">Homeless Shelter App</h3>
+          <img src="home.jpg" alt="Homeless Shelter App" class="w-full h-40 object-cover rounded-md shadow-md mb-2" />
+          <p class="project-desc">Predicts the availability of shelters in Toronto and suggests the nearest location
+            using
+            Open Data APIs.</p>
+          <span class="tag rounded-full px-3 py-1 text-sm">JavaScript</span>
+      </a>
 
-      faders.forEach((fader) => observer.observe(fader));
-    </script>
-    <script>
-      lucide.createIcons();
-    </script>
-  </body>
+      <!-- <div class="project-card p-4 border shadow-md rounded-md bg-[rgb(245,245,245)]">
+        <h3 class="project-title text-xl font-semibold mb-4">Cybersecurity SQL Project</h4>
+          <img src="cyber.jpg" alt="Cybersecurity Project" class="w-full h-40 object-cover rounded-md shadow-md mb-2" />
+          <p class="project-desc">Cybersecurity data managed with SQL queries and relational database design.</p>
+          <span class="tag rounded-full px-3 py-1 text-sm">SQL</span>
+      </div> -->
+
+      <div class="project-card p-4 border shadow-md rounded-md bg-[rgb(245,245,245)]">
+        <h3 class="project-title text-xl font-semibold mb-4">Narrative Psychology App</h3>
+          <img src="./1.webp" alt="Narrative Psychology App"
+            class="w-full h-40 object-cover rounded-md shadow-md mb-2" />
+          <p class="project-desc">Mimics a narrative therapy experience using interactive storytelling logic.</p>
+          <span class="tag rounded-full px-3 py-1 text-sm">Python</span>
+      </div>
+
+      <a href="https://github.com/terrykim109/pokemonCardCollector" class="project-card p-4 border shadow-md rounded-md bg-[rgb(245,245,245)]">
+        <h3 class="project-title text-xl font-semibold mb-4">Pokemon Collection App</h3>
+          <img src="4.webp" alt="Pokemon Collection App" class="w-full h-40 object-cover rounded-md shadow-md mb-2" />
+          <p class="project-desc">Tracks and organizes a Pokémon card collection for personal use.</p>
+          <span class="tag rounded-full px-3 py-1 text-sm">C++</span>
+      </a>
+
+      <a href="https://github.com/terrykim109/BreakOutGame" class="project-card p-4 border shadow-md rounded-md bg-[rgb(245,245,245)]">
+        <h3 class="project-title text-xl font-semibold mb-4">Breakout Game</h3>
+          <img src="123.png" alt="Breakout Game" class="w-full h-40 object-cover rounded-md shadow-md mb-2" />
+          <p class="project-desc">A retro arcade game recreation built in Java.</p>
+          <span class="tag rounded-full px-3 py-1 text-sm">Java</span>
+      </a>
+
+    </div>
+ 
+  </section>
+
+
+  <section id="projects" class="py-20 px-6 max-w-5xl mx-auto fade-in">
+    <h2 class="text-3xl font-bold mb-10 text-center">School Projects</h2>
+
+
+    <div class="project-grid grid gap-6 md:grid-cols-2">
+
+      <div class="project-card p-4 border shadow-md rounded-md bg-[rgb(245,245,245)]">
+        <h3 class="project-title text-xl font-semibold mb-4">Veterinarian Clinic System</h3>
+          <img src="vet.avif" alt="Veterinarian Clinic System"
+            class="w-full h-40 object-cover rounded-md shadow-md mb-2" />
+          <p class="project-desc">Menu-driven C application to manage pet records and schedule appointments.</p>
+          <span class="tag rounded-full px-3 py-1 text-sm">C</span>
+
+          
+      </div>
+  
+           <div class="project-card p-4 border shadow-md rounded-md bg-[rgb(245,245,245)]">
+        <h3 class="project-title text-xl font-semibold mb-4">Pre-Triage Application for Healthcare</h3>
+          <img src="clinic.avif" alt="Veterinarian Clinic System"
+            class="w-full h-40 object-cover rounded-md shadow-md mb-2" />
+          <p class="project-desc"> C++ console-based application simulating a healthcare facility’s pre-triage system to register patients, calculate estimated wait times based on historical data, manage separate patient lineups, 
+          and support admission and viewing functionalities. </p>
+          <span class="tag rounded-full px-3 py-1 text-sm">C++</span>
+</div>
+ 
+  </section>
+
+  
+    <section id="contact" class="bg-gray-200 py-20 fade-in">
+    <div class="px-6 max-w-5xl mx-auto">
+      <div class="about-content flex items-center space-x-6">
+        <div class="about-text-group">
+          <h2 class="text-3xl font-bold mb-6">Contact</h2>
+          <p class="about-text">
+            Want to connect? Send me an email at
+            <a href="mailto:terrykim109@gmail.com" class="text-blue-500 underline">terrykim109@gmail.com</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer class="py-6 text-center text-sm text-gray-500">
+    © 2025 Terry Kim. All rights reserved.
+  </footer>
+
+  <script>
+    const faders = document.querySelectorAll(".fade-in");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    faders.forEach((fader) => observer.observe(fader));
+  </script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
 </html>
