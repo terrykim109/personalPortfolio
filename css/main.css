@@ -178,3 +178,20 @@ header > * {
   color: #374151;
   margin-bottom: 0.75rem;
 }
+
+/* .bounce-text {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: bounce 10s;
+  color: #2c7a7b; 
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+} */

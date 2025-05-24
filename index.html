@@ -39,9 +39,12 @@
     <div class="about-text-group text-center md:text-left">
       <h2 class="text-3xl font-bold mb-6">About Me</h2>
       <p class="about-text">
+        <!-- <p id="typed-paragraph"><span id="typed-text"></span><span class="cursor">|</span></p> -->
+        <!-- <p class="mt-6 bounce-text">Hard-working team player</p> -->
+
         Seneca Polytechnic student with a passion for programming and technology. I am currently pursuing an advanced
         diploma in Computer Programming and Analysis. I have a previous background in Bachelor of Science in
-        Psychology from University of New Brunswick, Fredericton.
+        Psychology from University of New Brunswick, Fredericton. 
       </p>
     </div>
   </div>
@@ -91,6 +94,10 @@
 
   <section id="projects" class="py-20 px-6 max-w-5xl mx-auto fade-in">
     <h2 class="text-3xl font-bold mb-10 text-center">Side Projects</h2>
+      <div class ="mb-10"> 
+        These are the projects that I am working on as side projects. Github links attached. As these are in varying stages of progression, if you have visited my application previously, please take another moment if possible as I strive to continue to improve over time.
+   
+      </div>
 
 
     <div class="project-grid grid gap-6 md:grid-cols-2">
@@ -128,10 +135,19 @@
 
       <a href="https://github.com/terrykim109/BreakOutGame" class="project-card p-4 border shadow-md rounded-md bg-[rgb(245,245,245)]">
         <h3 class="project-title text-xl font-semibold mb-4">Breakout Game</h3>
-          <img src="123.png" alt="Breakout Game" class="w-full h-40 object-cover rounded-md shadow-md mb-2" />
+          <img src="6.png" alt="Breakout Game" class="breakout-game w-full h-40 object-cover rounded-md shadow-md mb-2" />
           <p class="project-desc">A retro arcade game recreation built in Java.</p>
           <span class="tag rounded-full px-3 py-1 text-sm">Java</span>
       </a>
+
+         <div class="project-card p-4 border shadow-md rounded-md bg-[rgb(245,245,245)]">
+        <h3 class="project-title text-xl font-semibold mb-4">My very own Portfolio Website (This website)</h4>
+          <img src="this.avif" alt="My own website" class="w-full h-40 object-cover rounded-md shadow-md mb-2" />
+          <p class="project-desc">Developed a responsive portfolio website using HTML, CSS, and JavaScript, optimized for performance and usability across desktop and mobile devices.</p>
+          <span class="tag rounded-full px-3 py-1 text-sm">Javascript</span>
+          <span class="tag rounded-full px-3 py-1 text-sm">html</span>
+      </div>
+
 
     </div>
  
@@ -140,9 +156,38 @@
 
   <section id="projects" class="py-20 px-6 max-w-5xl mx-auto fade-in">
     <h2 class="text-3xl font-bold mb-10 text-center">School Projects</h2>
-
+      <div>
+<p class ="mb-10"> 
+These are the projects that I have worked on during my studies at Seneca Polytechnic. Codes are available per request due to school policy. School curriculum mostly centered around
+object-oriented programming with C++, database and web development.
+</p>
+      </div>
 
     <div class="project-grid grid gap-6 md:grid-cols-2">
+
+
+  
+    
+ 
+           <div class="project-card p-4 border shadow-md rounded-md bg-[rgb(245,245,245)]">
+        <h3 class="project-title text-xl font-semibold mb-4">
+Database Application Development using C++</h3>
+          <img src="oracle1.avif" alt="Oracle Database Application"
+            class="w-full h-40 object-cover rounded-md shadow-md mb-2" />
+          <p class="project-desc"> Built a C++ console application as a group project integrating with Oracle Database 12c via OCCI to manage HR employee records. Implemented full CRUD operations with SQL, improving skills in database connectivity, query execution, and error handling.</p>
+           <span class="tag rounded-full px-3 py-1 text-sm">Oracle SQL</span>
+          <span class="tag rounded-full px-3 py-1 text-sm">C++</span>
+         
+</div>
+
+       <div class="project-card p-4 border shadow-md rounded-md bg-[rgb(245,245,245)]">
+        <h3 class="project-title text-xl font-semibold mb-4">Pre-Triage Application for Healthcare</h3>
+          <img src="clinic.avif" alt="Veterinarian Clinic System"
+            class="w-full h-40 object-cover rounded-md shadow-md mb-2" />
+          <p class="project-desc"> C++ console-based application simulating a healthcare facility’s pre-triage system to register patients, calculate estimated wait times based on historical data, manage separate patient lineups, 
+          and support admission and viewing functionalities. </p>
+          <span class="tag rounded-full px-3 py-1 text-sm">C++</span>
+</div>
 
       <div class="project-card p-4 border shadow-md rounded-md bg-[rgb(245,245,245)]">
         <h3 class="project-title text-xl font-semibold mb-4">Veterinarian Clinic System</h3>
@@ -153,16 +198,7 @@
 
           
       </div>
-  
-           <div class="project-card p-4 border shadow-md rounded-md bg-[rgb(245,245,245)]">
-        <h3 class="project-title text-xl font-semibold mb-4">Pre-Triage Application for Healthcare</h3>
-          <img src="clinic.avif" alt="Veterinarian Clinic System"
-            class="w-full h-40 object-cover rounded-md shadow-md mb-2" />
-          <p class="project-desc"> C++ console-based application simulating a healthcare facility’s pre-triage system to register patients, calculate estimated wait times based on historical data, manage separate patient lineups, 
-          and support admission and viewing functionalities. </p>
-          <span class="tag rounded-full px-3 py-1 text-sm">C++</span>
-</div>
- 
+
   </section>
 
   
@@ -186,6 +222,22 @@
   <footer class="py-6 text-center text-sm text-gray-500">
     © 2025 Terry Kim. All rights reserved.
   </footer>
+<!-- 
+<script>
+  const text = "Computer Programming and Analysis student at Seneca Polytechnic with a background in Bachelor of Science in Psychology!";
+  const typedText = document.getElementById("typed-text");
+  let i = 0;
+
+  function typeNextChar() {
+    if (i < text.length) {
+      typedText.textContent += text.charAt(i);
+      i++;
+      setTimeout(typeNextChar, 40); 
+    }
+  }
+
+  typeNextChar();
+</script>  -->
 
   <script>
     const faders = document.querySelectorAll(".fade-in");
@@ -206,7 +258,7 @@
   </script>
   <script>
     lucide.createIcons();
-  </script>
+  </script> 
 </body>
 
 </html>
